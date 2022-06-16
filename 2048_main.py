@@ -260,7 +260,6 @@ def compare_and_saving_user_score(user_score):
         board = open("ranking.txt", "r")     #순위표 open
         rankinglist = []     #순위를 담을 리스트 생성, 형식: ['이름', '점수']
         comparescore = []     #순위를 담을 리스트 생성, 단 점수만 담는다.
-        changedlist = []     #순위가 변경될 경우 변경된 순위를 담아놓는 리스트. 이를 txt파일에 적용한다
         while True:
             text = board.readline()     #txt파일에서 한 줄씩 읽어오기
             if not text:     #txt 파일에서 읽어올 것이 없어, text가 비었다면, 중단
